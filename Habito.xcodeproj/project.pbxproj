@@ -19,6 +19,7 @@
 		0F7937F925B85295007801E3 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7937F825B85295007801E3 /* Challenge.swift */; };
 		0F7937FD25B85832007801E3 /* ChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7937FC25B85832007801E3 /* ChallengeService.swift */; };
 		0F79396825B8A0E2007801E3 /* HabitoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F79396725B8A0E2007801E3 /* HabitoError.swift */; };
+		0F7939E325B8C0E2007801E3 /* AuthPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7939E225B8C0E2007801E3 /* AuthPublisher.swift */; };
 		0F7E771B25B4CA0C002D2666 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E771A25B4CA0C002D2666 /* Protocols.swift */; };
 		E436E26D2A3A2CEA4B244704 /* Pods_Habito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3F1DEFD9673D09B38743AF /* Pods_Habito.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		0F7937F825B85295007801E3 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		0F7937FC25B85832007801E3 /* ChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeService.swift; sourceTree = "<group>"; };
 		0F79396725B8A0E2007801E3 /* HabitoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitoError.swift; sourceTree = "<group>"; };
+		0F7939E225B8C0E2007801E3 /* AuthPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPublisher.swift; sourceTree = "<group>"; };
 		0F7E771A25B4CA0C002D2666 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		1A01C49467CC60A252DD2EA0 /* Pods-Habito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habito.debug.xcconfig"; path = "Target Support Files/Pods-Habito/Pods-Habito.debug.xcconfig"; sourceTree = "<group>"; };
 		5C3F1DEFD9673D09B38743AF /* Pods_Habito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,10 +79,11 @@
 		0F423DC225B466F5006BDAB6 /* Habito */ = {
 			isa = PBXGroup;
 			children = (
+				0F423DC325B466F5006BDAB6 /* HabitoApp.swift */,
+				0F7939E125B8C089007801E3 /* Publishers */,
 				0F7937F725B8527F007801E3 /* Models */,
 				0F74ED0E25B628ED00C4945E /* Services */,
 				0F423DEA25B48A6A006BDAB6 /* ViewModel */,
-				0F423DC325B466F5006BDAB6 /* HabitoApp.swift */,
 				0F423DD625B47037006BDAB6 /* Views */,
 				0F423DC725B466FB006BDAB6 /* Assets.xcassets */,
 				0F423DCC25B466FB006BDAB6 /* Info.plist */,
@@ -133,6 +136,14 @@
 				0F7937F825B85295007801E3 /* Challenge.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0F7939E125B8C089007801E3 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				0F7939E225B8C0E2007801E3 /* AuthPublisher.swift */,
+			);
+			path = Publishers;
 			sourceTree = "<group>";
 		};
 		11E3845D218073345A54C4BA /* Frameworks */ = {
@@ -274,6 +285,7 @@
 				0F7E771B25B4CA0C002D2666 /* Protocols.swift in Sources */,
 				0F7937F925B85295007801E3 /* Challenge.swift in Sources */,
 				0F79396825B8A0E2007801E3 /* HabitoError.swift in Sources */,
+				0F7939E325B8C0E2007801E3 /* AuthPublisher.swift in Sources */,
 				0F423DF025B48A7C006BDAB6 /* ViewModel.swift in Sources */,
 				0F423DE225B47A0F006BDAB6 /* Create.swift in Sources */,
 			);

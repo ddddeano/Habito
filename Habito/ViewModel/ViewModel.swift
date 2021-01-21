@@ -76,7 +76,7 @@ final class CreateChallengeViewModel :ObservableObject {
     private func currentUserId() -> AnyPublisher<UserId, HabitoError> {
         print("getting UserId")
         return userService.currentUser().flatMap { user -> AnyPublisher<UserId, HabitoError> in
-            return Fail(error: .auth(desctription: "someFirebase Auth Error")).eraseToAnyPublisher() 
+            return Fail(error: .auth(description: "someFirebase Auth Error")).eraseToAnyPublisher()
 //            if let userId = user?.uid {
 //                print("User is logged in....")
 //                return Just(userId)
